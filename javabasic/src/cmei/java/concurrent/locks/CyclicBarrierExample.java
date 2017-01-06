@@ -13,13 +13,12 @@ import java.util.concurrent.CyclicBarrier;
  * runnable:等待裁判做某件事，可选，或等着所有线程调用到 await 开始执行（也就是说它也好等着所有人准备好
  *         runnable是可选的，如果它没有，则是其他线程互相等着，直到所有人都准备好）
  *
- * Created by canhuamei on 12/6/16.
  */
 public class CyclicBarrierExample {
 
     public static void main(String[] args) throws InterruptedException {
         Runnable runnable=()-> System.out.println(" runnable in cyclicBarrier!");
-        
+
         int parties=3;
 
         CyclicBarrier cyclicBarrier=new CyclicBarrier(parties,runnable);

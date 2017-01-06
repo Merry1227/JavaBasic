@@ -48,6 +48,7 @@ public class AtomicArrays {
 			ths[i]=new Thread(){
 				public void run(){
 					int result=intArray.addAndGet(index, 1);
+					Collections.sort();
 					//System.out.println("thread_"+thnum+",result:"+result);
 					try {
 						Thread.sleep(index);
