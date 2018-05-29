@@ -1,7 +1,5 @@
 package cmei.java.concurrent.locks;
 
-import sun.tools.jconsole.Worker;
-
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 
